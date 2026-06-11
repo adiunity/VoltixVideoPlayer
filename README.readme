@@ -1,208 +1,38 @@
-# ⚡ Voltix Video Player
+# ⚡ Voltix Video Player (Advanced Engine)
 
-A modern media player built with Python and PyQt6.
+A modern, full-featured media player built with Python and PyQt6. 
 
-Voltix Video Player supports both video and audio playback with a clean interface, customizable controls, and future expansion features.
+Voltix Advanced features a sleek, borderless-style dark UI redesign (Catppuccin Mocha-inspired palette), persistent local database storage, drag-and-drop mechanics, and deep media playback controls.
 
 ---
 
 ## 🎬 Features
 
-### Media Playback
-- MP4 Support
-- MKV Support
-- AVI Support
-- MOV Support
-- WMV Support
-- WEBM Support
-- MP3 Support
-- WAV Support
-- FLAC Support
-- AAC Support
-- OGG Support
-- M4A Support
+### 💎 New & Advanced Core Features
+- **Modern Dark UI Redesign:** Re-engineered using a premium dark-mode theme, optimized layouts, and a dedicated sidebar layout.
+- **Media Library & Playlist Panel:** Powered by an integrated local database (`voltix_library.db`) to persistently save your custom playlists and track playback history across active sessions.
+- **Drag & Drop Engine:** Drop any compatible media file directly onto the window viewport to instantly start playback.
+- **Large Center Play Button Overlay:** An intuitive center-screen button that dynamically overlays the video, allowing you to click anywhere on the video viewport to toggle playback.
+- **Subtitle Loader Engine (.srt):** Clean, custom overlay for synchronized subtitles. Automatically searches for a matching `.srt` file in the same directory as the playing media file, or lets you load one manually.
+- **Playback Speed Control:** Dynamic hardware rate scaling dropdown supporting playback speeds from `0.5x` up to `2.0x`.
+- **Open-With-Voltix Integration Support:** Natively parses command-line file path payloads (`sys.argv`), enabling you to set Voltix as your operating system's default media player.
+- **EXE-Safe Resource Routing:** Hardened virtual file mapping utilizing absolute path calculations to ensure assets like `logo.ico` load flawlessly when compiled with PyInstaller.
 
-### Player Controls
-- Play
-- Pause
-- Stop
-- Open File
-- Volume Control
-- Seek Bar
-- Time Display
-- Fullscreen Mode
+### 🎥 Supported Media Codecs
+- **Video:** MP4, MKV, AVI, MOV, WMV, WEBM
+- **Audio:** MP3, WAV, FLAC, OGG, AAC, M4A
 
-### User Interface
-- Custom Voltix Branding
-- Custom Window Icon
-- Logo Display When No Media Is Loaded
-- Responsive Layout
+### ⚙ Player Controls
+- Modernized Play / Pause / Stop mechanics
+- Persistent Volume Slider
+- Smooth Video Timeline Seeking
+- Dynamic Frame Layout Time Display (`HH:MM:SS`)
+- Seamless Fullscreen Toggle (`F11` or Keybind)
 
-### Keyboard Shortcuts
-| Key | Action |
-|------|---------|
-| Space | Play / Pause |
-| O | Open File |
-| F | Fullscreen |
-| S | Settings |
-
-### Settings System
-- Saved Settings
-- Configurable Volume
-- Keybind System
-- JSON-Based Configuration
-
----
-
-## 📸 Screenshots
-
-Add screenshots here later.
-
-Example:
-
-![Voltix Screenshot](screenshot.png)
-
----
-
-## 🛠 Installation
-
-### Clone Repository
-
-```bash
-git clone https://github.com/YOUR_USERNAME/VoltixVideoPlayer.git
-```
-
-### Enter Project Folder
-
-```bash
-cd VoltixVideoPlayer
-```
-
-### Install Dependencies
-
-```bash
-pip install PyQt6
-```
-
-### Run Voltix
-
-```bash
-python Voltix_Advanced.py
-```
-
----
-
-## 📦 Building An EXE
-
-Install PyInstaller:
-
-```bash
-pip install pyinstaller
-```
-
-Build:
-
-```bash
-pyinstaller --clean --onefile --windowed --icon=logo.ico Voltix_Advanced.py
-```
-
-The executable will be located inside:
-
-```text
-dist/
-```
-
----
-
-## 📁 Project Structure
-
-```text
-VoltixVideoPlayer/
-│
-├── Voltix_Advanced.py
-├── settings.json
-├── logo.png
-├── logo.ico
-├── README.md
-│
-├── build/
-├── dist/
-└── __pycache__/
-```
-
----
-
-## ⚙ Settings File
-
-Example:
-
-```json
-{
-    "volume": 100,
-    "keybinds": {
-        "open": "O",
-        "play_pause": "Space",
-        "settings": "S",
-        "fullscreen": "F"
-    }
-}
-```
-
----
-
-## 🚀 Planned Features
-
-- Playlist Support
-- Drag & Drop Files
-- Subtitle Support
-- Recent Files
-- Media Library
-- Theme Editor
-- Advanced Keybind Editor
-- Playback Speed Control
-- Video Filters
-- Picture-In-Picture Mode
-- Auto Update System
-
----
-
-## 🐛 Bug Reports
-
-If you find a bug:
-
-1. Open an Issue
-2. Explain the problem
-3. Include screenshots if possible
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome.
-
-Feel free to:
-- Submit Pull Requests
-- Report Bugs
-- Suggest Features
-
----
-
-## 📜 License
-
-This project is licensed under the MIT License.
-
-See the LICENSE file for details.
-
----
-
-## 👨‍💻 Developer
-
-Developed by Aditya.
-
-Powered by Python and PyQt6.
-
----
-
-## ⚡ Voltix Video Player
-
-Simple. Fast. Powerful.
+### ⌨ Keyboard Shortcuts (Configurable)
+| Default Key | Action | Description |
+|:---:|---|---|
+| **Space** | Play / Pause | Toggle media playback state |
+| **O** | Open File | Open system file dialog explorer |
+| **F** / **F11** | Fullscreen | Toggle video fullscreen viewport display |
+| **S** | Settings | Launch advanced configuration pane |
