@@ -1,0 +1,9 @@
+{
+    "volume": 100,
+    "keybinds": {
+        "open": "O",
+        "play_pause": "Space",
+        "settings": "S",
+        "fullscreen": "F"
+    }
+}
