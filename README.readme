@@ -1,5 +1,208 @@
-To Whoever is using this product-
-to change settings , u can change settings from the "Settings.json" file.
-It's simple , change the keybind in the code.
-Open it in the notepad, and edit the keybinds.
-VOLTIX VIDEO PLAYER V 0.0
+# ⚡ Voltix Video Player
+
+A modern media player built with Python and PyQt6.
+
+Voltix Video Player supports both video and audio playback with a clean interface, customizable controls, and future expansion features.
+
+---
+
+## 🎬 Features
+
+### Media Playback
+- MP4 Support
+- MKV Support
+- AVI Support
+- MOV Support
+- WMV Support
+- WEBM Support
+- MP3 Support
+- WAV Support
+- FLAC Support
+- AAC Support
+- OGG Support
+- M4A Support
+
+### Player Controls
+- Play
+- Pause
+- Stop
+- Open File
+- Volume Control
+- Seek Bar
+- Time Display
+- Fullscreen Mode
+
+### User Interface
+- Custom Voltix Branding
+- Custom Window Icon
+- Logo Display When No Media Is Loaded
+- Responsive Layout
+
+### Keyboard Shortcuts
+| Key | Action |
+|------|---------|
+| Space | Play / Pause |
+| O | Open File |
+| F | Fullscreen |
+| S | Settings |
+
+### Settings System
+- Saved Settings
+- Configurable Volume
+- Keybind System
+- JSON-Based Configuration
+
+---
+
+## 📸 Screenshots
+
+Add screenshots here later.
+
+Example:
+
+![Voltix Screenshot](screenshot.png)
+
+---
+
+## 🛠 Installation
+
+### Clone Repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/VoltixVideoPlayer.git
+```
+
+### Enter Project Folder
+
+```bash
+cd VoltixVideoPlayer
+```
+
+### Install Dependencies
+
+```bash
+pip install PyQt6
+```
+
+### Run Voltix
+
+```bash
+python Voltix_Advanced.py
+```
+
+---
+
+## 📦 Building An EXE
+
+Install PyInstaller:
+
+```bash
+pip install pyinstaller
+```
+
+Build:
+
+```bash
+pyinstaller --clean --onefile --windowed --icon=logo.ico Voltix_Advanced.py
+```
+
+The executable will be located inside:
+
+```text
+dist/
+```
+
+---
+
+## 📁 Project Structure
+
+```text
+VoltixVideoPlayer/
+│
+├── Voltix_Advanced.py
+├── settings.json
+├── logo.png
+├── logo.ico
+├── README.md
+│
+├── build/
+├── dist/
+└── __pycache__/
+```
+
+---
+
+## ⚙ Settings File
+
+Example:
+
+```json
+{
+    "volume": 100,
+    "keybinds": {
+        "open": "O",
+        "play_pause": "Space",
+        "settings": "S",
+        "fullscreen": "F"
+    }
+}
+```
+
+---
+
+## 🚀 Planned Features
+
+- Playlist Support
+- Drag & Drop Files
+- Subtitle Support
+- Recent Files
+- Media Library
+- Theme Editor
+- Advanced Keybind Editor
+- Playback Speed Control
+- Video Filters
+- Picture-In-Picture Mode
+- Auto Update System
+
+---
+
+## 🐛 Bug Reports
+
+If you find a bug:
+
+1. Open an Issue
+2. Explain the problem
+3. Include screenshots if possible
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome.
+
+Feel free to:
+- Submit Pull Requests
+- Report Bugs
+- Suggest Features
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
+
+See the LICENSE file for details.
+
+---
+
+## 👨‍💻 Developer
+
+Developed by Aditya.
+
+Powered by Python and PyQt6.
+
+---
+
+## ⚡ Voltix Video Player
+
+Simple. Fast. Powerful.
